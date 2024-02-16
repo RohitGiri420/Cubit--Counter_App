@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Screen/Counter_Screen.dart';
+
 void main(){
   runApp(MyApp());
 }
@@ -8,8 +10,8 @@ void main(){
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: CounterScreen(),
     );
   }
